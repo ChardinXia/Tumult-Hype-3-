@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Tumult-hype-3- by ChardinXia</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Tumult-hype-3-</h1>
+        <p>Tumult Hype 3 資料動態實作● 行動裝置動態研究</p>
+
+        <p class="view"><a href="https://github.com/ChardinXia/Tumult-Hype-3-">View the Project on GitHub <small>ChardinXia/Tumult-Hype-3-</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/ChardinXia/Tumult-Hype-3-/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ChardinXia/Tumult-Hype-3-/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ChardinXia/Tumult-Hype-3-">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="tumult-hype-3-資料動態實作-行動裝置動態研究" class="anchor" href="#tumult-hype-3-%E8%B3%87%E6%96%99%E5%8B%95%E6%85%8B%E5%AF%A6%E4%BD%9C-%E8%A1%8C%E5%8B%95%E8%A3%9D%E7%BD%AE%E5%8B%95%E6%85%8B%E7%A0%94%E7%A9%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tumult Hype 3 資料動態實作● 行動裝置動態研究</h1>
+
+<ol>
+<li>區塊滑動/手勢</li>
+<li>頁面固定上面</li>
+<li>捲軸</li>
+<li>動態 流暢度</li>
+<li>頁面往下拉 會出現搜尋框</li>
+</ol>
+
+<h5>
+<a id="版面大小預設為iphone5-因個人使用手機版本方便測試" class="anchor" href="#%E7%89%88%E9%9D%A2%E5%A4%A7%E5%B0%8F%E9%A0%90%E8%A8%AD%E7%82%BAiphone5-%E5%9B%A0%E5%80%8B%E4%BA%BA%E4%BD%BF%E7%94%A8%E6%89%8B%E6%A9%9F%E7%89%88%E6%9C%AC%E6%96%B9%E4%BE%BF%E6%B8%AC%E8%A9%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>版面大小預設為Iphone5 (因個人使用手機版本方便測試)</h5>
+
+<hr>
+
+<blockquote>
+<h3>
+<a id="2016118" class="anchor" href="#2016118" aria-hidden="true"><span class="octicon octicon-link"></span></a>2016.1.18</h3>
+</blockquote>
+
+<ul>
+<li>
+<h5>
+<a id="行動裝置無法禁止用戶旋轉設備為了版面顯示正確可使用該裝置尺寸製作適應的版本" class="anchor" href="#%E8%A1%8C%E5%8B%95%E8%A3%9D%E7%BD%AE%E7%84%A1%E6%B3%95%E7%A6%81%E6%AD%A2%E7%94%A8%E6%88%B6%E6%97%8B%E8%BD%89%E8%A8%AD%E5%82%99%E7%82%BA%E4%BA%86%E7%89%88%E9%9D%A2%E9%A1%AF%E7%A4%BA%E6%AD%A3%E7%A2%BA%E5%8F%AF%E4%BD%BF%E7%94%A8%E8%A9%B2%E8%A3%9D%E7%BD%AE%E5%B0%BA%E5%AF%B8%E8%A3%BD%E4%BD%9C%E9%81%A9%E6%87%89%E7%9A%84%E7%89%88%E6%9C%AC" aria-hidden="true"><span class="octicon octicon-link"></span></a>行動裝置無法禁止用戶旋轉設備,為了版面顯示正確可使用該裝置尺寸製作適應的版本:</h5>
+
+<pre><code>EX Iphone5:
+Landcape: width: 568px, height: 320px;  
+Portrait: width: 320px, height: 568px;  
+</code></pre>
+</li>
+<li>
+<h5>
+<a id="固定動裝置全版面因手勢拖動" class="anchor" href="#%E5%9B%BA%E5%AE%9A%E5%8B%95%E8%A3%9D%E7%BD%AE%E5%85%A8%E7%89%88%E9%9D%A2%E5%9B%A0%E6%89%8B%E5%8B%A2%E6%8B%96%E5%8B%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>固定動裝置全版面因手勢拖動</h5>
+
+<p>待測試方法1: <code>html,body{overflow: hidden}</code></p>
+
+<p>待測試方法2: <code>使用套件AppScroll.js      'AppScroll is a tiny JS library that fixes the "website dragging" issue caused on iDevices'</code></p>
+</li>
+<li>
+<h5>
+<a id="捲軸尺寸css" class="anchor" href="#%E6%8D%B2%E8%BB%B8%E5%B0%BA%E5%AF%B8css" aria-hidden="true"><span class="octicon octicon-link"></span></a>捲軸尺寸css</h5>
+
+<pre><code>::-webkit-scrollbar {
+-webkit-appearance: none;
+}
+::-webkit-scrollbar:vertical {
+width: 6px;
+}
+::-webkit-scrollbar:horizontal {
+height: 0;
+}
+::-webkit-scrollbar-thumb {
+background-color: rgba(0, 0, 0, .5);
+border-radius: 10px;
+border: 2px solid #ffffff;
+}
+::-webkit-scrollbar-track {
+border-radius: 10px;
+background-color: #ffffff;
+}
+
+</code></pre>
+</li>
+<li>
+<h5>
+<a id="滑動區塊顯示隱藏" class="anchor" href="#%E6%BB%91%E5%8B%95%E5%8D%80%E5%A1%8A%E9%A1%AF%E7%A4%BA%E9%9A%B1%E8%97%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>滑動區塊顯示/隱藏</h5>
+
+<p>解決hype拖移事件的方法。可使用於側邊欄、下拉出現收尋框、隱藏按鈕顯示...etc。</p>
+</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/ChardinXia">ChardinXia</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
