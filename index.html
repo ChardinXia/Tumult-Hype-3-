@@ -54,51 +54,57 @@
 <h5>
 <a id="行動裝置無法禁止用戶旋轉設備為了版面顯示正確可使用該裝置尺寸製作適應的版本" class="anchor" href="#%E8%A1%8C%E5%8B%95%E8%A3%9D%E7%BD%AE%E7%84%A1%E6%B3%95%E7%A6%81%E6%AD%A2%E7%94%A8%E6%88%B6%E6%97%8B%E8%BD%89%E8%A8%AD%E5%82%99%E7%82%BA%E4%BA%86%E7%89%88%E9%9D%A2%E9%A1%AF%E7%A4%BA%E6%AD%A3%E7%A2%BA%E5%8F%AF%E4%BD%BF%E7%94%A8%E8%A9%B2%E8%A3%9D%E7%BD%AE%E5%B0%BA%E5%AF%B8%E8%A3%BD%E4%BD%9C%E9%81%A9%E6%87%89%E7%9A%84%E7%89%88%E6%9C%AC" aria-hidden="true"><span class="octicon octicon-link"></span></a>行動裝置無法禁止用戶旋轉設備,為了版面顯示正確可使用該裝置尺寸製作適應的版本:</h5>
 
-<pre><code>ex Iphone5:
-Landcape: width: 568px, height: 320px;  
-Portrait: width: 320px, height: 568px;  
+<p>ex Iphone5:</p>
+
+<pre><code>Landcape: width: 568px, height: 320px;    
+Portrait: width: 320px, height: 568px;    
 </code></pre>
+
+<p>​</p>
 </li>
 <li>
 <h5>
 <a id="固定動裝置全版面因手勢拖動" class="anchor" href="#%E5%9B%BA%E5%AE%9A%E5%8B%95%E8%A3%9D%E7%BD%AE%E5%85%A8%E7%89%88%E9%9D%A2%E5%9B%A0%E6%89%8B%E5%8B%A2%E6%8B%96%E5%8B%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>固定動裝置全版面因手勢拖動</h5>
 
-<p>待測試方法1: <code>html,body{overflow: hidden}</code></p>
+<p>待測試方法1:</p>
 
-<p>待測試方法2: <code>使用套件AppScroll.js      'AppScroll is a tiny JS library that fixes the "website dragging" issue caused on iDevices'</code></p>
+<div class="highlight highlight-source-css"><pre><span class="pl-ent">html</span>,<span class="pl-ent">body</span>{<span class="pl-c1"><span class="pl-c1">overflow</span></span>: <span class="pl-c1">hidden</span>} </pre></div>
+
+<p>待測試方法2:
+使用 AppScroll.js  <a href="https://github.com/jakiestfu/AppScroll.js">https://github.com/jakiestfu/AppScroll.js</a></p>
 </li>
 <li>
 <h5>
 <a id="捲軸尺寸css" class="anchor" href="#%E6%8D%B2%E8%BB%B8%E5%B0%BA%E5%AF%B8css" aria-hidden="true"><span class="octicon octicon-link"></span></a>捲軸尺寸css</h5>
 
-<pre><code>::-webkit-scrollbar {
--webkit-appearance: none;
+<div class="highlight highlight-source-css"><pre>::-webkit-scrollbar {
+    <span class="pl-c1">-webkit-<span class="pl-c1">appearance</span></span>: <span class="pl-c1">none</span>;
 }
 ::-webkit-scrollbar:vertical {
-width: 6px;
+    <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">6<span class="pl-k">px</span></span>;
 }
 ::-webkit-scrollbar:horizontal {
-height: 0;
+    <span class="pl-c1"><span class="pl-c1">height</span></span>: <span class="pl-c1">0</span>;
 }
 ::-webkit-scrollbar-thumb {
-background-color: rgba(0, 0, 0, .5);
-border-radius: 10px;
-border: 2px solid #ffffff;
+    <span class="pl-c1"><span class="pl-c1">background-color</span></span>: <span class="pl-c1">rgba</span>(<span class="pl-c1">0, 0, 0, .5</span>);
+    <span class="pl-c1"><span class="pl-c1">border-radius</span></span>: <span class="pl-c1">10<span class="pl-k">px</span></span>;
+    <span class="pl-c1"><span class="pl-c1">border</span></span>: <span class="pl-c1">2<span class="pl-k">px</span></span> <span class="pl-c1">solid</span> <span class="pl-c1">#ffffff</span>;
 }
 ::-webkit-scrollbar-track {
-border-radius: 10px;
-background-color: #ffffff;
-}
-
-</code></pre>
+    <span class="pl-c1"><span class="pl-c1">border-radius</span></span>: <span class="pl-c1">10<span class="pl-k">px</span></span>;
+    <span class="pl-c1"><span class="pl-c1">background-color</span></span>: <span class="pl-c1">#ffffff</span>;
+}</pre></div>
 </li>
 <li>
 <h5>
 <a id="滑動區塊顯示隱藏" class="anchor" href="#%E6%BB%91%E5%8B%95%E5%8D%80%E5%A1%8A%E9%A1%AF%E7%A4%BA%E9%9A%B1%E8%97%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>滑動區塊顯示/隱藏</h5>
 
+<p>使用 snap.js  <a href="http://jakiestfu.github.io/Snap.js/demo/apps/default.html">http://jakiestfu.github.io/Snap.js/demo/apps/default.html</a></p>
+
 <p>解決hype拖移事件的方法。可使用於側邊欄、下拉出現收尋框、隱藏按鈕顯示...etc。</p>
 
-<p><img src="https://raw.githubusercontent.com/ChardinXia/Tumult-Hype-3-/master/image/img01.gif" alt="snapeGif"></p>
+<p>​<img src="https://raw.githubusercontent.com/ChardinXia/Tumult-Hype-3-/master/image/img01.gif" alt="snapeGif"></p>
 </li>
 </ul>
       </section>
