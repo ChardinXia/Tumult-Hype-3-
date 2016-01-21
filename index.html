@@ -32,7 +32,7 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a id="tumult-hype-3-資料動態實作-行動裝置動態研究" class="anchor" href="#tumult-hype-3-%E8%B3%87%E6%96%99%E5%8B%95%E6%85%8B%E5%AF%A6%E4%BD%9C-%E8%A1%8C%E5%8B%95%E8%A3%9D%E7%BD%AE%E5%8B%95%E6%85%8B%E7%A0%94%E7%A9%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tumult Hype 3 資料動態實作● 行動裝置動態研究</h1>
+<a id="tumult-hype-3-資料動態實作-行動裝置動態研究" class="anchor" href="#tumult-hype-3-%E8%B3%87%E6%96%99%E5%8B%95%E6%85%8B%E5%AF%A6%E4%BD%9C-%E8%A1%8C%E5%8B%95%E8%A3%9D%E7%BD%AE%E5%8B%95%E6%85%8B%E7%A0%94%E7%A9%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tumult Hype 3 資料動態實作● 行動裝置動態研究</h1>
 
 <ol>
 <li>區塊滑動/手勢</li>
@@ -43,14 +43,14 @@
 </ol>
 
 <h5>
-<a id="版面大小預設為iphone5-因個人使用手機版本方便測試" class="anchor" href="#%E7%89%88%E9%9D%A2%E5%A4%A7%E5%B0%8F%E9%A0%90%E8%A8%AD%E7%82%BAiphone5-%E5%9B%A0%E5%80%8B%E4%BA%BA%E4%BD%BF%E7%94%A8%E6%89%8B%E6%A9%9F%E7%89%88%E6%9C%AC%E6%96%B9%E4%BE%BF%E6%B8%AC%E8%A9%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>版面大小預設為Iphone5 (因個人使用手機版本方便測試)</h5>
+<a id="版面大小預設為iphone5-因個人使用手機版本方便測試" class="anchor" href="#%E7%89%88%E9%9D%A2%E5%A4%A7%E5%B0%8F%E9%A0%90%E8%A8%AD%E7%82%BAiphone5-%E5%9B%A0%E5%80%8B%E4%BA%BA%E4%BD%BF%E7%94%A8%E6%89%8B%E6%A9%9F%E7%89%88%E6%9C%AC%E6%96%B9%E4%BE%BF%E6%B8%AC%E8%A9%A6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>版面大小預設為Iphone5 (因個人使用手機版本方便測試)</h5>
 
 <hr>
 
 <ul>
 <li>
 <h5>
-<a id="行動裝置無法禁止用戶旋轉設備" class="anchor" href="#%E8%A1%8C%E5%8B%95%E8%A3%9D%E7%BD%AE%E7%84%A1%E6%B3%95%E7%A6%81%E6%AD%A2%E7%94%A8%E6%88%B6%E6%97%8B%E8%BD%89%E8%A8%AD%E5%82%99" aria-hidden="true"><span class="octicon octicon-link"></span></a>行動裝置無法禁止用戶旋轉設備</h5>
+<a id="行動裝置無法禁止用戶旋轉設備" class="anchor" href="#%E8%A1%8C%E5%8B%95%E8%A3%9D%E7%BD%AE%E7%84%A1%E6%B3%95%E7%A6%81%E6%AD%A2%E7%94%A8%E6%88%B6%E6%97%8B%E8%BD%89%E8%A8%AD%E5%82%99" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>行動裝置無法禁止用戶旋轉設備</h5>
 
 <p>網頁旋轉設備存在BUG</p>
 
@@ -60,10 +60,36 @@
 </ul>
 
 <p>總結無論使用所知的何種方法在旋轉設備時，部分區塊會停留在直屏的狀態。</p>
+
+<p>[1/21]</p>
+</li>
+</ul>
+
+<h4>
+<a id="行動裝置無法禁止用戶旋轉設備衍伸出的問題" class="anchor" href="#%E8%A1%8C%E5%8B%95%E8%A3%9D%E7%BD%AE%E7%84%A1%E6%B3%95%E7%A6%81%E6%AD%A2%E7%94%A8%E6%88%B6%E6%97%8B%E8%BD%89%E8%A8%AD%E5%82%99%E8%A1%8D%E4%BC%B8%E5%87%BA%E7%9A%84%E5%95%8F%E9%A1%8C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>行動裝置無法禁止用戶旋轉設備衍伸出的問題</h4>
+
+<ul>
+<li>
+<p>為了固定版面將置頂或置下區塊使用Jquery移動至最外層方法會照成版面適應寬度的問題</p>
+
+<p>解決方法： 取消使用此用法，改變滑動方式。</p>
+
+<p>​</p>
 </li>
 <li>
+<p>使用套件 iScroll 代替滑動效果可讓滑動效果類似app的方式(有ease in out的效果)，已寬高100%適應多數的裝置尺寸。</p>
+
+<p>​</p>
+</li>
+</ul>
+
+<h2>
+<a id="--iscroll套件或有滑動狀態的套件會使hype35-viewport的功能無法即時反應通常要等滑動結束後才會反映動畫" class="anchor" href="#--iscroll%E5%A5%97%E4%BB%B6%E6%88%96%E6%9C%89%E6%BB%91%E5%8B%95%E7%8B%80%E6%85%8B%E7%9A%84%E5%A5%97%E4%BB%B6%E6%9C%83%E4%BD%BFhype35-viewport%E7%9A%84%E5%8A%9F%E8%83%BD%E7%84%A1%E6%B3%95%E5%8D%B3%E6%99%82%E5%8F%8D%E6%87%89%E9%80%9A%E5%B8%B8%E8%A6%81%E7%AD%89%E6%BB%91%E5%8B%95%E7%B5%90%E6%9D%9F%E5%BE%8C%E6%89%8D%E6%9C%83%E5%8F%8D%E6%98%A0%E5%8B%95%E7%95%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>- iScroll套件或有滑動狀態的套件會使hype3.5 viewport的功能無法即時反應，通常要等滑動結束後才會反映動畫。</h2>
+
+<ul>
+<li>
 <h5>
-<a id="固定行動裝置全版面因手勢拖動" class="anchor" href="#%E5%9B%BA%E5%AE%9A%E8%A1%8C%E5%8B%95%E8%A3%9D%E7%BD%AE%E5%85%A8%E7%89%88%E9%9D%A2%E5%9B%A0%E6%89%8B%E5%8B%A2%E6%8B%96%E5%8B%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>固定行動裝置全版面因手勢拖動</h5>
+<a id="固定行動裝置全版面因手勢拖動" class="anchor" href="#%E5%9B%BA%E5%AE%9A%E8%A1%8C%E5%8B%95%E8%A3%9D%E7%BD%AE%E5%85%A8%E7%89%88%E9%9D%A2%E5%9B%A0%E6%89%8B%E5%8B%A2%E6%8B%96%E5%8B%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>固定行動裝置全版面因手勢拖動</h5>
 
 <p>測試方法:</p>
 
@@ -77,7 +103,7 @@
 </li>
 <li>
 <h5>
-<a id="捲軸尺寸css" class="anchor" href="#%E6%8D%B2%E8%BB%B8%E5%B0%BA%E5%AF%B8css" aria-hidden="true"><span class="octicon octicon-link"></span></a>捲軸尺寸css</h5>
+<a id="捲軸尺寸css" class="anchor" href="#%E6%8D%B2%E8%BB%B8%E5%B0%BA%E5%AF%B8css" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>捲軸尺寸css</h5>
 
 <div class="highlight highlight-source-css"><pre>::-webkit-scrollbar {
     <span class="pl-c1">-webkit-<span class="pl-c1">appearance</span></span>: <span class="pl-c1">none</span>;
@@ -100,7 +126,7 @@
 </li>
 <li>
 <h5>
-<a id="滑動區塊顯示隱藏" class="anchor" href="#%E6%BB%91%E5%8B%95%E5%8D%80%E5%A1%8A%E9%A1%AF%E7%A4%BA%E9%9A%B1%E8%97%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>滑動區塊顯示/隱藏</h5>
+<a id="滑動區塊顯示隱藏" class="anchor" href="#%E6%BB%91%E5%8B%95%E5%8D%80%E5%A1%8A%E9%A1%AF%E7%A4%BA%E9%9A%B1%E8%97%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>滑動區塊顯示/隱藏</h5>
 
 <p>使用 snap.js  <a href="http://jakiestfu.github.io/Snap.js/demo/apps/default.html">http://jakiestfu.github.io/Snap.js/demo/apps/default.html</a></p>
 
@@ -110,7 +136,7 @@
 </li>
 <li>
 <h5>
-<a id="滑動頁面顯示隱藏元素" class="anchor" href="#%E6%BB%91%E5%8B%95%E9%A0%81%E9%9D%A2%E9%A1%AF%E7%A4%BA%E9%9A%B1%E8%97%8F%E5%85%83%E7%B4%A0" aria-hidden="true"><span class="octicon octicon-link"></span></a>滑動頁面，顯示隱藏元素</h5>
+<a id="滑動頁面顯示隱藏元素" class="anchor" href="#%E6%BB%91%E5%8B%95%E9%A0%81%E9%9D%A2%E9%A1%AF%E7%A4%BA%E9%9A%B1%E8%97%8F%E5%85%83%E7%B4%A0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>滑動頁面，顯示隱藏元素</h5>
 
 <p>使用hype3.5 Actions中的 Viewport滑動可達到執行元素動畫。</p>
 
